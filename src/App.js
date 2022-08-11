@@ -10,7 +10,8 @@ function App() {
       <header>
         <h1>My First Login</h1>
       </header>
-      {isLoggedIn ? <SecretStuff /> : <Login setIsLoggedIn={setIsLoggedIn} />}
+      {isLoggedIn ? <SecretStuff setIsLoggedIn={setIsLoggedIn}/> 
+      : <Login setIsLoggedIn={setIsLoggedIn} />}
     </>
   )
 }
